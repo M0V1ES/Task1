@@ -15,9 +15,13 @@ public class  MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    }
-    public void onClick(View view){
-        Intent intent = new Intent(this, AdaptiveOnboard.class);
-        startActivity(intent);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this, AdaptiveOnboard.class);
+                startActivity(intent);
+            }
+        }, 1000);
     }
 }

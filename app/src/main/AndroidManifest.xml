@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Granula"
         tools:targetApi="31">
         <activity
+            android:name=".Signin_signup"
+            android:exported="false" />
+        <activity
             android:name=".AdaptiveOnboard3"
             android:exported="false" />
         <activity
