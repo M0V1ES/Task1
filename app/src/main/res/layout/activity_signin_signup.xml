@@ -72,7 +72,9 @@
             android:layout_height="56dp"
             android:layout_gravity="center"
             android:layout_marginTop="32dp"
-            android:backgroundTint="#1A6FEE"
+            android:backgroundTint="@color/lowblue"
+            android:enabled="false"
+            android:fontFamily="sans-serif-medium"
             android:text="Далее"
             app:cornerRadius="10dp" />
 
