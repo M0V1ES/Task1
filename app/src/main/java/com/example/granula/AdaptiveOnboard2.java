@@ -13,15 +13,12 @@ public class AdaptiveOnboard2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adaptive_onboard2);
-        new Handler().postDelayed(new Runnable(){
-            @Override
-            public void run(){
-                Intent intent = new Intent(AdaptiveOnboard2.this, AdaptiveOnboard3.class);
-                startActivity(intent);
-            }
-        },5000);
     }
     public void onClick(View view){
+        Intent intent = new Intent(this, Signin_signup.class);
+        startActivity(intent);
+    }
+    public void onClick1(View view){
         Intent intent = new Intent(this, AdaptiveOnboard3.class);
         startActivity(intent);
     }

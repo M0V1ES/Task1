@@ -17,4 +17,5 @@ public class AdaptiveOnboard3 extends AppCompatActivity {
         Intent intent = new Intent(this, Signin_signup.class);
         startActivity(intent);
     }
+
 }

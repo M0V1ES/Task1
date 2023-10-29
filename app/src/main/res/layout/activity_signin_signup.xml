@@ -15,89 +15,114 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="96dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/emojies"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="16dp"
-                />
+                android:layout_marginTop="61dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/emojies" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="81px"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Добро пожаловать!"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:text="Добро пожаловать!"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:textStyle="bold" />
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/roboto_bold"
+
+                android:text="Войдите, чтобы пользоваться функциями \n приложения"
+                android:textAlignment="center" />
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView16"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Войдите, чтобы пользоваться функциями \n приложения"
+            android:orientation="vertical">
 
-            android:layout_marginTop="23dp"/>
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="64dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Вход по E-mail" />
 
-        <TextView
-            android:id="@+id/textView11"
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radiusrectangle"
+                android:ems="10"
+                android:hint="example@mail.ru"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="335dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/lowblue"
+                android:enabled="false"
+                android:fontFamily="@font/roboto_bold"
+                android:onClick="onClick"
+                android:text="Далее"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="64dp"
-            android:text="Вход по E-mail" />
+            android:orientation="vertical"
+            android:gravity="center">
 
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:background="@drawable/radiusrectangle"
-            android:hint="example@mail.ru"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp"
-            android:layout_marginTop="4dp"/>
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="232dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Или войдите с помощью"
+                android:textAlignment="center"
+                android:textColor="#939396" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="335dp"
-            android:layout_height="56dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="32dp"
-            android:backgroundTint="@color/lowblue"
-            android:enabled="false"
-            android:fontFamily="sans-serif-medium"
-            android:text="Далее"
-            app:cornerRadius="10dp" />
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="232dp"
-            android:text="Или войдите с помощью"
-            android:textAlignment="center"
-            android:textColor="#939396" />
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="34dp"
-            android:text="Войти с Яндекс"
-            android:textAlignment="center"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Войти с Яндекс"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
 
     </LinearLayout>
 
